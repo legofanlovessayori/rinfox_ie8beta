@@ -52,13 +52,14 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox-0.4.1 archive inside it, and replace when prompted the files.
 5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 archive inside it. Also in about:support select "Clear Startup Cache".
 6. Close and reopen Firefox.
-7. Now you should see that the layout has been applied, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar"
-8. Inside Customize toolbar, at the bottom check Title Bar, and remove everything removable from the toolbar by doing Right-Click on element and hitting Remove from toolbar. Now slowly add the elements copying the following layout:
+7. Now you should see that the layout has been applied, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
+  * If you have your Windows set to Dark Mode, this theme doesn't work with it, so disable it by going to about:addons > Themes > Enable Light theme.
+9. Inside Customize toolbar, at the bottom check Title Bar, and remove everything removable from the toolbar by doing Right-Click on element and hitting Remove from toolbar. Now slowly add the elements copying the following layout:
 ![](ie7%20layout.png)
    * Note that menu bar is hidden, and that you need to uncheck Hide downloads.
-9. To have the Quick Tabs, if you have skipped *xpinstall.signatures.required* [you may simply install TipTab from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/). This will not be skinned when activated but it will still have the icon skinned in toolbar. Simply install it, pin it to toolbar, go back again to Customize Toolbar and add it after the star with plus icon (Library). It should be auto-skinned (icon only).
+10. To have the Quick Tabs, if you have skipped *xpinstall.signatures.required* [you may simply install TipTab from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/). This will not be skinned when activated but it will still have the icon skinned in toolbar. Simply install it, pin it to toolbar, go back again to Customize Toolbar and add it after the star with plus icon (Library). It should be auto-skinned (icon only).
    * To go extra mile with skinned look when pressed and you have *xpinstall.signatures.required* disabled, go to about:addons and click on the little wheel and do Install Add-on From File and select the xpi extension from Quick Tabs Extension folder. Simply install it, pin it to toolbar, go back again to Customize Toolbar and add it after the star with plus icon (Library). It should be auto-skinned.
-10. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
+11. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
   * https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox
 
 ## Extras
