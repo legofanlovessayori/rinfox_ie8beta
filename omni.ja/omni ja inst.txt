@@ -1,0 +1,11 @@
+﻿⚠️WARNING⚠️
+
+This mod requires editing firefox omni.ja files which gets replaced with each update. You have to disable updates to keep the modifications. This could break at any time in new versions above 109.0. I will take no responsability if it breaks above version 109.
+
+
+
+Extracting Omni.ja
+
+In Firefox install folder > browser > omni.ja
+
+Extract it via WinRar or 7Zip, to a folder, replace the contents, zip it to archive and replace the .zip extension to .ja and replace omni.ja.
