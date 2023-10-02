@@ -1,0 +1,38 @@
+@import url("_base.css");
+@import url("_main.css");
+@import url("_menuBar.css");
+@import url("_navBar.css");
+@import url("_tabs.css");
+@import url("_customizeUI.css");
+@import url("_urlBar.css");
+@import url("_misc.css");
+@import url("_tweaks.css");
+@import url("_aboutBox.css");
+
+:root {
+    --rinfox_tweak_ie8: 0;
+}
+
+@supports -moz-bool-pref("rinfox.tweaks.ie8") {
+    :root {
+        --rinfox_tweak_ie8: 1;
+    }
+}
+
+:root:is([privatebrowsingmode=temporary]) #urlbar-input-container::before {
+  content: "";
+  height: 100%;
+  width: 75px;
+  margin-left: 2px;
+  background: url(images/InPrivate.svg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#private-browsing-indicator-with-label {
+  display: none !important;
+}
+
+.tabbrowser-tab:only-of-type {
+    max-width: 300px !important; /* Close value, compare screenshots and use the actual correct one, if this is already correct then :OOO */
+}
