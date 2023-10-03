@@ -49,8 +49,8 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 > xpinstall.signatures.required
 >> set to: FALSE //// **This disables extension signature, which may be a security risk**. This can be skipped if you don't want to skin TipTab extension to look like QuickTabs when pressed (icon will still be skinned regardless).
 
-4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox-0.4.1 archive inside it, and replace when prompted the files.
-5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 archive inside it. Also in about:support select "Clear Startup Cache".
+4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox-0.4.1 folder inside it, and replace when prompted the files.
+5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 folder inside it. Also in about:support select "Clear Startup Cache".
 6. Close and reopen Firefox.
 7. Now you should see that the layout has been applied, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
   * If you have your Windows set to Dark Mode, this theme doesn't work with it, so disable it by going to about:addons > Themes > Enable Light theme.
