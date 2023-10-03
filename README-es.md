@@ -1,4 +1,4 @@
-![image](https://github.com/luisl173/rinfox_updated_spanish/assets/108156867/3faf49e2-4d88-4ab5-ba48-e5c23a06d0b5)# ¿Qué es RinFox?
+# ¿Qué es RinFox?
 ![](banner.png)
 
 Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Internet Explorer 7 (and 8). El nombre Rinfox es por "Rincon" (Nombre en clave de IE7) y fué creado por [travis](https://github.com/travy-patty) quien también creó [Windows eXPerience](https://experience.noncities.com/). Esto es solo un simple repositiorio de GitHub de su versión 0.4.1 para un facil y simple alcance, y si alguna persona piensa arreglarlo (ya que algunas cosas están semi rotas).
