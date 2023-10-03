@@ -1,7 +1,7 @@
 # ¿Qué es RinFox?
 ![](banner.png)
 
-Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Internet Explorer 7 (and 8). El nombre Rinfox es por "Rincon" (Nombre en clave de IE7) y fupe creado por [travis](https://github.com/travy-patty) quien también creó [Windows eXPerience](https://experience.noncities.com/). Esto es solo un simple repositiorio de GitHub de su versión 0.4.1 para un facil y simple alcance, y si alguna persona piensa arreglarlo (ya que algunas cosas están semi rotas).
+Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Internet Explorer 7 (and 8). El nombre Rinfox es por "Rincon" (Nombre en clave de IE7) y fué creado por [travis](https://github.com/travy-patty) quien también creó [Windows eXPerience](https://experience.noncities.com/). Esto es solo un simple repositiorio de GitHub de su versión 0.4.1 para un facil y simple alcance, y si alguna persona piensa arreglarlo (ya que algunas cosas están semi rotas).
 
 ## Características
 
@@ -23,21 +23,21 @@ Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Interne
 
 ###### Este tema es compatible con 115ESR y se aconseja usarlo. ESR recibe actualizaciones de seguridad por mas tiempo comparado con las versiones normales de Firefox y las actualizaciones pueden no romper los temas. A partir de Firefox 117, Mozilla dejó de soportar Windows 7 y por ende eliminando la capacidad de usar temas de Aero con este.
 
-1. Descarga e instala Firefox 115ESR:
-   * https://ftp.mozilla.org/pub/firefox/releases/115.3.1esr/win64/es-ES/
+1. Descarga e instala [Firefox 115 ESR](https://ftp.mozilla.org/pub/firefox/releases/115.3.1esr/win64/es-ES/)
 2. Una vez instalado, ve a Acerca de Firefox y deja que se actualice al último parche de seguridad.
 3. Ahora que Firefox está actualizado, podemos empezar a aplicar el tema. En Firefox, escribe about:config en la barra de direcciones y busca y edita los siguientes valores:
 
 * `toolkit.legacyUserProfileCustomizations.stylesheets` == Booleano == true
 * `browser.theme.dark-private-windows` == Booleano == false
 * `browser.display.windows.non_native_menus` == Número == 0
-* `ui.prefersReducedMotion` == Crear como **Número** == 1
+* `ui.prefersReducedMotion` == **Crear como Número** == 1
 * `browser.privateWindowSeparation.enabled` == Booleano == false
 * `browser.tabs.secondaryTextUnsupportedLocales` == Cadena == Agrega tu idioma junto a los demás (ej. `en, es`)
-* `xpinstall.signatures.required` == Booleano == fakse
-> ¡ADVERTENCIA! **Esto evita que Firefox verifique las firmas de extensiones, lo cual puede ser un riesgo de seguridad**. Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para verse como Pestañas Rápidas al ser pulsado (El icono de la extensión sera cambiado de todos modos).
+* `xpinstall.signatures.required` == Booleano == false
+### ¡ADVERTENCIA! Esto evita que Firefox verifique las firmas de extensiones, lo cual puede ser un riesgo de seguridad. 
+Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para verse como Pestañas Rápidas al ser pulsado (El icono de la extensión sera cambiado de todos modos).
 
-4. Ve al directorio donde instalaste Firefox (normalmente en C:\Program Files\Mozilla Firefox) y copia los **contenidos** de la carpeta `ffroot` dentro de la carpeta `rinfox-0.4.1\Spanish` folder dentro de éste, y reemplazar archivos si se le pregunta.
+4. Ve al directorio donde instalaste Firefox (normalmente en C:\Program Files\Mozilla Firefox) y copia los **contenidos** de la carpeta `ffroot` dentro de la carpeta `rinfox-0.4.1\Spanish`  dentro de éste, y reemplazar archivos si se le pregunta.
 5. Abre Firefox, escribe `about:support` en la barra de direcciones. Busca hasta que encuentres una pestaña que diga `Carpeta del perfil` y haz clic en `Abrir carpeta`. Copia la carpeta "chrome" dentro de la carpeta `rinfox-0.4.1\Spanish` dentro de ésta. Ademas dentro de `about:support` sube y haz clic en `Limpiar caché de inicio...`.
 6. Deja que Firefox se reinicie.
 7. El tema esta aplicado, pero el orden de los elementos no se ve bien. Para arreglar esto haz clic derecho en la barra de pestañas y luego en "Personalizar barra de herramientas".
@@ -51,43 +51,46 @@ Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Interne
 
 ## Extras
 
-* The extras part is optional, however it does make it more convincing overall. Extras contain replacing HomePage, New Tab page and inPrivate page (omni.ja tweaks), and lets you replace the Firefox icon system-wide as well as enabling Aero for themes that support it.
-* **This part is recommended to be used with disabled updates, as they WILL get overwritten when a new ESR update is installed.**
+* Esta parte es opcional,sin embargo, lo hace más convincente en general. Los extras incluyen el reemplazo de la página de inicio, la página Nueva pestaña y la página inPrivate (ajustes de omni.ja), y le permiten reemplazar el ícono de Firefox en todo el sistema, además de habilitar Aero para los temas que lo admiten.
+* **Se recomienda utilizar esta parte con actualizaciones deshabilitadas, ya que los archivos *serán reemplazados nuevamente* cuando se instale una nueva actualización de ESR.**
 
-### Replacing Firefox icons and enabling Aero
+### Reemplazar íconos de Firefox y activar Aero
 
-1. Download and install Resource Hacker:
-  * http://www.angusj.com/resourcehacker/
-2. Open Resource Hacker and load firefox.exe from Firefox installation folder (usually inside C:\Program Files\Mozilla Firefox).
-3. Edit the following values accordingly:
+1. Descarga e instala [Resource Hacker](http://www.angusj.com/resourcehacker/)
+2. Abre Resource Hacker y busca y abre `firefox.exe` dentro de la carpeta de instalación de Firefox (generalmente dentro de C:\Program Files\Mozilla Firefox).
+3. Edite los siguientes valores a continucación:
 
-> Inside String Table tab
->> Simply change "Firefox" to "Internet Explorer" then hit compile (green play button).
+  3.1. Dentro de `String Table` cambia "Firefox" a "Internet Explorer" y luego haz clic en Compilar (el botón verde) o pulsa F5.
 
-> Inside Icon Group tab
->> Go to IconGroup 1, 2, 5, 6 & 32512, do right click and hit Change Resource and replace each to the .icos inside "icon and aero" folder accordingly
+  3.2. Dentro de `Icon Group` busca IconGroup 1, 2, 5, 6 y 32512, haga clic derecho y presione Cambiar recurso y reemplace cada uno con los .icos dentro de la carpeta "icon and aero" según corresponda.
 
-> Inside Manifest tab
->> Simply remove all but last supportedID (should only be supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>), then hit compile (green play button).
+  3.3. Dentro de `Manifest` elimina todos los ID de compatibilidad **excepto** el último (solo debe quedar `<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>`), y luego haz clic Compilar (el botón verde) o pulsa F5.
 
-4. Do File > Save and save it as firefox.exe on Desktop. Do Ctrl+C and Ctrl+V and replace firefox.exe from the installation folder.
+4. Haz clic en Archivo > Guardar y guárdalo como `firefox.exe` en el escritorio. Haga Ctrl+C y Ctrl+V y reemplaza firefox.exe de la carpeta de instalación.
 
-### Omni.ja tweaks
+### Mejoras a Omni.ja
 
-1. Go to Firefox installation folder (usually inside C:\Program Files\Mozilla Firefox) > browser folder. There you should find a file called omni.ja. Simply open it with WinRar or 7Zip and extract it somewhere on your Desktop.
-2. Copy and replace "chrome" folder inside the extracted files.
-3. Take all folders and zip it back(do not create have extra folders). Change extension from .zip to .ja.
-4. Copy and replace omni.ja.
-5. Open Firefox, navigate to Settings > Home and change inside New Windows and Tabs:
-  * Homepage and new windows > Firefox Home (Default)
-  * New tabs > Blank Page
-6. Back to Settings > Privacy & Security > Clear Data. Check only Cookies and Site Data then hit Clear.
-7. Back to Settings > Privacy & Security > History (scroll down). In the drop-down menu next to Firefox will, choose Use custom settings for history. Turn on Clear history when Firefox closes and hit Settings button. Inside settings dialog, uncheck everything besides Cache (only Cache should be checked). Hit OK.
-8. Finally, go to Firefox installation folder, and right click firefox.exe > Send to > Desktop (create shortcut).
-9. Go to the shortcut, right-click to it > Properties > Shorcut, and in Target, change it to:
+###### Gracias a una nueva actualización, ahora puedes elegir entre Traducciones (próximamente) y estilo de páginas (estilo Internet Explorer 7 o estilo Internet Explorer 8). Elija el que desees y asegúrate de comenzar a copiar solo la carpeta "chrome" como se indica a continuación.
+1. Vaya a la carpeta de instalación de Firefox (normalmente dentro de C:\Program Files\Mozilla Firefox) > carpeta del navegador. Allí deberías encontrar un archivo llamado omni.ja. Simplemente ábrelo con WinRar o 7Zip y extráelo en algún lugar de tu escritorio.
+2. Copia y reemplaza la carpeta "chrome" dentro de los archivos extraídos.
+3. Compríme nuevamente todo en un zip (sin crear carpetas adicionales). Cambie la extensión de .zip a .ja.
+4. Copia y reemplaza omni.ja.
+5. Abre Firefox, ve a Ajustes > Inicio y cambie dentro de Nuevas ventanas y pestañas:
+  * Página de inicio y nuevas ventanas > Página de inicio de Firefox (predeterminado)
+  * Nuevas pestañas > Página en blanco
+6. Regresa a Ajustes > Privacidad & seguridad > Borrar datos. Marque solo Cookies y Datos del sitio y luego presione Borrar.
+7. Regrese a Configuración > Privacidad y seguridad > Historial (desplácese hacia abajo). En el menú desplegable junto a Firefox, elija "Usar una configuración personalizada para el historial". Activa "Limpiar el historial cuando Firefox se cierre" y presione el botón "Configuración...". Dentro del cuadro de diálogo de configuración, desmarca todo excepto Caché (solo debes marcar Caché). Haz clic en Aceptar.
+8. Finalmente, vaya a la carpeta de instalación de Firefox y haga clic derecho en firefox.exe > Enviar a > Escritorio (crear acceso directo).
+9. Vaya al acceso directo, haga clic derecho sobre él > Propiedades > Acceso directo y en "Destino", cámbialo a:
   * "C:\Program Files\Mozilla Firefox\firefox.exe" --purgecaches --purgecache
-10. Hit Apply, OK. You should open Firefox from this shorcut, so pin it to taskbar or send it to Start Menu.
+10. Presione Aplicar, y de ahí Aceptar. Deberías abrir Firefox desde este acceso directo, así que anclalo a la barra de tareas y/o envíalo al menú Inicio.
+    
+## Creditos
 
-## Credits
-
-* Rinfox is made by [travis](https://github.com/travy-patty) which also made [Windows eXPerience](https://experience.noncities.com/).
+* Rinfox fué creado por [travis](https://github.com/travy-patty) quién también creó [Windows eXPerience](https://experience.noncities.com/).
+* Arreglos al diálogo `Acerca de...`, SVG de inPrivate y mejoras a la barra de herramientas por [angelbruni](https://github.com/brunobits).
+* Arreglos al tamaño de las pestañas por RandomFIFA64#7391
+* Cambios a omni.ja por mí (florin).
+* [Tip Tab por William Wong](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/)
+* Mozilla por crear Firefox.
+* Microsoft for IE7 icons.
