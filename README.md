@@ -49,7 +49,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 > xpinstall.signatures.required
 >> set to: FALSE //// **This disables extension signature, which may be a security risk**. This can be skipped if you don't want to skin TipTab extension to look like QuickTabs when pressed (icon will still be skinned regardless).
 
-###### On a new update, now you can choose between Translations (coming soon). Pick whichever you like and make sure to start copying only the folders as instructed below.
+###### Thanks to a new update, now you can choose between Translations (coming soon). Pick whichever you like and make sure to start copying only the folders as instructed below.
 4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox-0.4.1 folder inside it, and replace when prompted the files.
 5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 folder inside it. Also in about:support select "Clear Startup Cache".
 6. Close and reopen Firefox.
@@ -88,7 +88,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 
 ### Omni.ja tweaks
 
-###### On a new update, now you can choose between Translations (coming soon) and style of pages (Internet Explorer 7 style or Internet Explorer 8 style). Pick whichever you like and make sure to start copying only the "chrome" folder as instructed below.
+###### Thanks to a new update, now you can choose between Translations (coming soon) and style of pages (Internet Explorer 7 style or Internet Explorer 8 style). Pick whichever you like and make sure to start copying only the "chrome" folder as instructed below.
 1. Go to Firefox installation folder (usually inside C:\Program Files\Mozilla Firefox) > browser folder. There you should find a file called omni.ja. Simply open it with WinRar or 7Zip and extract it somewhere on your Desktop.
 2. Copy and replace "chrome" folder inside the extracted files.
 3. Take all folders and zip it back(do not create have extra folders). Change extension from .zip to .ja.
