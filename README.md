@@ -1,5 +1,5 @@
 # What is RinFox?
-![](banner.png)
+![](banner.png) ![](banner-ie8.png)
 
 Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Internet Explorer 7 (and 8). Rinfox is named after "Rincon" (IE7's codename) and is made by [travis](https://github.com/travy-patty) which also made [Windows eXPerience](https://experience.noncities.com/). This is a simple GitHub repo of his 0.4.1 version of it, for simple and easy reach, and if people want to fix it (as a lot of things are semi-broken).
 
@@ -17,7 +17,10 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * Compatible with Firefox 115ESR.
 * *Can optionally be tweaked to work on Waterfox.*
 
+###### Internet Explorer 7 (default) mode with applied icons, correct layout, aero and IE7 style omni.ja tweaks:
 ![](screen_2.png)
+###### Internet Explorer 8 mode with applied icons, correct layout, aero and IE8 style omni.ja tweaks:
+![](screen_3.png)
 
 ## Installation
 
@@ -62,6 +65,20 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
    * To go extra mile with skinned look when pressed and you have *xpinstall.signatures.required* disabled, go to about:addons and click on the little wheel and do Install Add-on From File and select the xpi extension from Quick Tabs Extension folder. Simply install it, pin it to toolbar, go back again to Customize Toolbar and add it after the star with plus icon (Library). It should be auto-skinned.
 11. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
   * https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox
+
+## Switching between Internet Explorer 7 and Internet Explorer 8 mode
+
+1. By switching modes, changes such as About Firefox box, and layout change will happen.
+2. To do so, open Firefox and type about:config and add the following value as so:
+
+> rinfox.tweak.ie8
+>> create as BOOLEAN, then set value to: TRUE
+
+3. Restart Firefox. Now you should see that the layout has been switched, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
+4. Inside Customize toolbar, add back the Bookmarks tab and change the layout like so:
+![](ie8layout.png)
+* Note that you add Library, Bookmarks **AND a seperator** (in Configuration Toolbar: the one in the middle - straight vertical line) after it. Don't worry it's not like in the picture, it will auto-adjust itself.
+5. Hit Done. If layout looks weird (icons look too big), a restart of your PC is needed. When back from the restart, it should be auto-fixed.
 
 ## Extras
 
