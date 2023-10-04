@@ -70,7 +70,7 @@ Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para
 
 ### Mejoras a Omni.ja
 
-###### Gracias a una nueva actualización, ahora puedes elegir entre Traducciones (próximamente) y estilo de páginas (estilo Internet Explorer 7 o estilo Internet Explorer 8). Elija el que desees y asegúrate de comenzar a copiar solo la carpeta "chrome" como se indica a continuación.
+###### Gracias a una nueva actualización, ahora puedes elegir entre Traducciones y estilo de páginas (estilo Internet Explorer 7 o estilo Internet Explorer 8). Elija el que desees y asegúrate de comenzar a copiar solo la carpeta "chrome" como se indica a continuación.
 1. Vaya a la carpeta de instalación de Firefox (normalmente dentro de C:\Program Files\Mozilla Firefox) > carpeta "browser". Allí deberías encontrar un archivo llamado `omni.ja`. Simplemente ábrelo con WinRar o 7Zip y extráelo en algún lugar de tu escritorio.
 2. Copia y reemplaza la carpeta "chrome" dentro de los archivos extraídos.
 3. Compríme nuevamente todo en un zip (sin crear carpetas adicionales). Cambie la extensión de .zip a .ja.
@@ -87,10 +87,16 @@ Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para
     
 ## Creditos
 
+### Desarrollo de Rinfox
 * Rinfox fué creado por [travis](https://github.com/travy-patty) quién también creó [Windows eXPerience](https://experience.noncities.com/).
 * Arreglos al diálogo `Acerca de...`, SVG de inPrivate y mejoras a la barra de herramientas por [angelbruni](https://github.com/brunobits).
 * Arreglos al tamaño de las pestañas por RandomFIFA64#7391
 * Cambios a omni.ja por mí (florin).
 * [Tip Tab por William Wong](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/)
 * Mozilla por crear Firefox.
-* Microsoft for IE7 icons.
+* Microsoft por crear IE7 icos.
+
+### Traducciones
+* Inglés - yo (florin)
+* Rumano - yo (florin)
+* Español - [luisl173](https://github.com/florinsdistortedvision/rinfox_updated/pull/1)
