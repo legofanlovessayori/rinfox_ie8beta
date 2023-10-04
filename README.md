@@ -12,7 +12,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * Custom pages for Home Page, New Tab and inPrivate Browsing.
 * Customized TipTab extension to look like QuickTabs.
 * Customized branding and aboutBox (when viewing About Firefox).
-* Internet Explorer 7 icons.
+* Internet Explorer 7/8 icons.
 * Toggle-able switch between Internet Explorer 7 and Internet Explorer 8 look.
 * Compatible with Firefox 115ESR.
 * *Can optionally be tweaked to work on Waterfox.*
