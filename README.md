@@ -15,7 +15,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * Internet Explorer 7/8 icons.
 * Toggle-able switch between Internet Explorer 7 and Internet Explorer 8 look.
 * Compatible with Firefox 115ESR.
-* *Can optionally be tweaked to work on Waterfox.*
+* *Can optionally be tweaked to work on Waterfox and floorp.*
 
 ###### Internet Explorer 7 (default) mode with applied icons, correct layout, aero and IE7 style omni.ja tweaks:
 ![](screen_2.png)
