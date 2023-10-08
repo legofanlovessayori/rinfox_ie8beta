@@ -36,3 +36,8 @@
 .tabbrowser-tab:only-of-type {
     max-width: 300px !important; /* Close value, compare screenshots and use the actual correct one, if this is already correct then :OOO */
 }
+
+.tabbrowser-tab:first-of-type:last-of-type .tab-close-button {
+    display: none !important;
+               opacity: 0 !important;
+}
