@@ -359,6 +359,7 @@
     .searchbar-search-button:hover .searchbar-search-icon {
       transform: translateX(-1px) !important;
     }
+	
     #personal-toolbar-empty-description, toolbarbutton.bookmark-item:not(.subviewbutton) {
       appearance: toolbarbutton !important;
       margin: 0 !important;
@@ -368,10 +369,8 @@
       align-items: center !important;
       min-width: 24px !important;
     }
-    #PersonalToolbar .toolbarbutton-1 > .toolbarbutton-icon {
-      width: 16px !important;
-      height: 16px !important;
-    }
+
+	@supports not -moz-bool-pref("rinfox.tweak.ie8") {
     #toolbar-menubar[autohide="true"][inactive="true"] + #PersonalToolbar {
       background-image: linear-gradient(to bottom, #FEFEFF 0%, #E5EAF5 25%, #D4DBED 25%, #E1E6F6 100%) !important;
       box-shadow: none !important;
@@ -381,6 +380,7 @@
       border-bottom: 1px solid #B6BCCC !important;
       box-shadow: inset 0 1px 0 #FFF !important;
     }
+	}
     @supports -moz-bool-pref("rinfox.tweak.ie8") {
       #toolbar-menubar[autohide="true"][inactive="true"]:not([customizing="true"]) {
         margin-top: 0 !important;
