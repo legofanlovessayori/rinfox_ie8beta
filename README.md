@@ -126,6 +126,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * Rinfox is made by [travis](https://github.com/travy-patty) which also made [Windows eXPerience](https://experience.noncities.com/).
 * About dialog fixes, inPrivate svg and addition to toolbar by [angelbruni](https://github.com/brunobits).
 * Accurate single tab size addition & removal of X button for one tab by RandomFIFA64#7391
+* IE8 Bookmarks fix by [ImSwordQueen](https://github.com/ImSwordQueen)
 * omni.ja tweaks by me.
 * [Tip Tab by William Wong](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/)
 * Mozilla for Firefox.
