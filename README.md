@@ -109,8 +109,9 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 1. Go to Firefox installation folder > **browser folder** (usually inside C:\Program Files\Mozilla Firefox\browser). There you should find a file called omni.ja. Simply open it with WinRar or 7Zip and extract it somewhere on your Desktop.
 2. Copy and replace "chrome" folder inside the extracted files.
 3. Take all folders and zip it back(do not create have extra folders). Change extension from .zip to .ja.
-4. Copy and replace omni.ja.
-5. Open Firefox, navigate to Settings > Home and change inside New Windows and Tabs:
+4. Copy and replace omni.ja. Final omni.ja should look like this (note the contents and location of archive):
+![](omni%20ja%20contents.png) 
+6. Open Firefox, navigate to Settings > Home and change inside New Windows and Tabs:
   * Homepage and new windows > Firefox Home (Default)
   * New tabs > Blank Page
 6. Back to Settings > Privacy & Security > Clear Data. Check only Cookies and Site Data then hit Clear.
