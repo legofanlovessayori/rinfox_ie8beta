@@ -57,7 +57,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 folder inside it. Also in about:support select "Clear Startup Cache".
 6. Close and reopen Firefox.
 7. Now you should see that the layout has been applied, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
-  * If you have your Windows set to Dark Mode, this theme doesn't work with it, so disable it by going to about:addons > Themes > Enable Light theme.
+  * If you don't have already (enabled by default) set auto theme by going to about:addons > Themes > Enable Auto theme.
 9. Inside Customize toolbar, at the bottom check Title Bar, and remove everything removable from the toolbar by doing Right-Click on element and hitting Remove from toolbar. Now slowly add the elements copying the following layout:
 ![](ie7%20layout.png)
    * Note that menu bar is hidden, and that you need to uncheck Hide downloads.
