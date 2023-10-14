@@ -13,7 +13,7 @@
     --rinfox_tweak_ie8: 0;
 }
 
-@supports -moz-bool-pref("rinfox.tweaks.ie8") {
+@supports -moz-bool-pref("rinfox.tweak.ie8") {
     :root {
         --rinfox_tweak_ie8: 1;
     }
