@@ -370,6 +370,20 @@
       min-width: 24px !important;
     }
 
+      #personal-toolbar-empty-description, toolbarbutton.bookmark-item:not(.subviewbutton) {
+        appearance: toolbarbutton !important;
+        margin: 0 !important;
+      }
+      #PersonalToolbar .toolbarbutton-1 {
+        margin-block: 0 !important;
+        align-items: center !important;
+        min-width: 24px !important;
+      }
+      #PersonalToolbar .toolbarbutton-1 > .toolbarbutton-icon {
+        width: 16px !important;
+        height: 16px !important;
+	  }
+	
 	@supports not -moz-bool-pref("rinfox.tweak.ie8") {
     #toolbar-menubar[autohide="true"][inactive="true"] + #PersonalToolbar {
       background-image: linear-gradient(to bottom, #FEFEFF 0%, #E5EAF5 25%, #D4DBED 25%, #E1E6F6 100%) !important;
