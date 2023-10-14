@@ -53,8 +53,8 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 >> set to: FALSE //// **This disables extension signature, which may be a security risk**. This can be skipped if you don't want to skin TipTab extension to look like QuickTabs when pressed (icon will still be skinned regardless).
 
 ###### Thanks to a new update, now you can choose between Translations. Pick whichever you like and make sure to start copying only the folders as instructed below.
-4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox-0.4.1 folder inside it, and replace when prompted the files.
-5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox-0.4.1 folder inside it. Also in about:support select "Clear Startup Cache".
+4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox folder inside it, and replace when prompted the files.
+5. In Firefox, type about:support. Scroll down till you see Profile Folder tab then click Open Folder. Copy the entire "chrome" folder from rinfox folder inside it. Also in about:support select "Clear Startup Cache".
 6. Close and reopen Firefox.
 7. Now you should see that the layout has been applied, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
   * If you don't have already (enabled by default) set auto theme by going to about:addons > Themes > Enable Auto theme.
@@ -96,7 +96,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 >> Simply change "Firefox" to "Internet Explorer" then hit compile (green play button).
 
 > Inside Icon Group tab
->> Go to IconGroup 1, 2, 5, 6 & 32512, do right click and hit Change Resource and replace each to the .icos inside "icon and aero" folder accordingly
+>> Go to IconGroup 1, 2, 5, 6 & 32512, do right click and hit Change Resource and replace each to the .icos inside "icons" folder accordingly
 
 > Inside Manifest tab
 >> Simply remove all but last supportedID (should only be supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>), then hit compile (green play button).
@@ -106,7 +106,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 ### Omni.ja tweaks
 
 ###### Thanks to a new update, now you can choose between Translations and style of pages (Internet Explorer 7 style or Internet Explorer 8 style). Pick whichever you like and make sure to start copying only the "chrome" folder as instructed below.
-1. Go to Firefox installation folder (usually inside C:\Program Files\Mozilla Firefox) > browser folder. There you should find a file called omni.ja. Simply open it with WinRar or 7Zip and extract it somewhere on your Desktop.
+1. Go to Firefox installation folder > **browser folder** (usually inside C:\Program Files\Mozilla Firefox\browser). There you should find a file called omni.ja. Simply open it with WinRar or 7Zip and extract it somewhere on your Desktop.
 2. Copy and replace "chrome" folder inside the extracted files.
 3. Take all folders and zip it back(do not create have extra folders). Change extension from .zip to .ja.
 4. Copy and replace omni.ja.
