@@ -121,6 +121,10 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
   * "C:\Program Files\Mozilla Firefox\firefox.exe" --purgecaches --purgecache
 10. Hit Apply, OK. You should open Firefox from this shorcut, so pin it to taskbar or send it to Start Menu.
 
+### Native Firefox scrollbars
+
+* https://github.com/ephemeralViolette/firefox-native-controls
+
 ## Credits
 
 ### Rinfox Development
