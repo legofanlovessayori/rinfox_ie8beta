@@ -33,7 +33,6 @@ Rinfox es un tema para Mozilla Firefox 115ESR que copia la apariencia de Interne
 * `ui.prefersReducedMotion` == **Crear como Número** == 1
 * `browser.privateWindowSeparation.enabled` == Booleano == false
 * `browser.tabs.secondaryTextUnsupportedLocales` == Cadena == Agrega tu idioma junto a los demás (ej. `en, es`)
-* `xpinstall.signatures.required` == Booleano == false
 ### ¡ADVERTENCIA! Esto evita que Firefox verifique las firmas de extensiones, lo cual puede ser un riesgo de seguridad. 
 Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para verse como Pestañas Rápidas al ser pulsado (El icono de la extensión sera cambiado de todos modos).
 
@@ -45,8 +44,7 @@ Puedes omitir esto si no quieres instalar el tema para la extensión TipTab para
 9. En la pestaña que se abre, marca la casilla `Barra de titulo` abajo del todo, y quita todo lo que se pueda quitar de la barra de herramientas haciendo clic derecho en el elemento y luego en "Quitar de la barra de herramientas". Ahora agrega poco a poco los elementos copiando el diseño que se muestra en la imagen:
 ![](ie7%20layout.png)
    * Recordar que la barra de menú está oculta, y queza debas desmarcar la opción de "Ocultar descargas".
-10. Para tener Pestañas Rápidas, si omitiste el desactivar `xpinstall.signatures.required` [puedes simplemente instalarlo de la tienda de add-ons de Firefox](https://addons.mozilla.org/es-ES/firefox/addon/tip-tab/). Al instalarlo así su apariencia no sera modificada cuando se active pero aun asi tendrá su icono modificado en la barra de herramientas. Simplemente instálalo, anclalo a la barra, vuelve a "Personalizar barra de herramientas" y mueve la extensión al lado del ícono de la estrella con un más (Biblioteca). Su ícono deberia cambiar automaticamente.
-   * Para ir mas allá y tener una mejor apariencia entonces tentras que tener `xpinstall.signatures.required` desactivados, ve a `about:addons` haz clic en la pequeña rueda y luego en "Instalar Add-on desde archivo" y elige el archivo xpi dentro de la carpeta "Quick Tabs Extension". Simplemente instálalo, anclalo a la barra, vuelve a "Personalizar barra de herramientas" y mueve la extensión al lado del ícono de la estrella con un más (Biblioteca). Su ícono deberia cambiar automaticamente.
+10. Para tener Pestañas Rápidas [puedes simplemente instalarlo de la tienda de add-ons de Firefox](https://addons.mozilla.org/es-ES/firefox/addon/tip-tab/). Simplemente fíjelo a la barra de herramientas y agréguelo en su lugar.
 11. Ahora sería una buena idea desactivar las actualizaciones de Firefox. Aunque actualizar Firefox ESR **no debería** romper cosas, siempre va a romper cambios a omni.ja (página de inicio, página de inprivate y nueva pestaña) junto que los iconos (iconos de Firefox) serán revertidos, si esto no te importa mucho puedes simplemente omitir este paso. Y si quieres desactivarlo, puedes hacerlo [siguiendo la siguiente guía](https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox) (en inglés):
 
 ## Extras
