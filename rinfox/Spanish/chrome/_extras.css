@@ -20,3 +20,14 @@
     display: none !important;
                opacity: 0 !important;
 }
+
+/* Replace "Library" with "Favorites" */
+#library-button > .toolbarbutton-text {
+text-indent: -9999px !important;
+line-height: 1 !important; /* Collapse the original line */
+}
+#library-button>.toolbarbutton-text::After {
+content: "Favoritos" !important;
+text-indent: 0 !important;
+display: flex !important;
+background-color: transparent !important;
