@@ -122,6 +122,20 @@
   margin-bottom: 2px !important;
 }
 
+/* IE7 Mode */
+#TabsToolbar #tiptab_william_wong-BAP {
+  width: 24px !important;
+  list-style-image: url('images/all-tabs-preview.png') !important;
+  height: 100% !important;
+}
+
+/* If IE8 Mode is enabled in about:config */
+:not(:root[rinfox-tweak-ie8="true"]) #TabsToolbar #tiptab_william_wong-BAP {
+  list-style-image: url('images/all-tabs-preview.png') !important;
+  background-image: none !important;
+}
+
+
 .tabbrowser-tab:not([visuallyselected=true]):hover .tab-background,
 #tabs-newtab-button:hover,
 #alltabs-button:hover,
