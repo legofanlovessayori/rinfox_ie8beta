@@ -31,3 +31,8 @@ content: "Favoritos" !important;
 text-indent: 0 !important;
 display: flex !important;
 background-color: transparent !important;
+}
+
+.tabbrowser-tab:not([selected="true"]) .tab-close-button {
+  visibility: collapse !important;
+}
