@@ -285,3 +285,7 @@
 #TabsToolbar #bookmarks-menu-button {
   order: -1 !important;
 }
+
+.tabbrowser-tab:not([selected="true"]) .tab-close-button {
+  visibility: collapse !important;
+}
