@@ -1,12 +1,151 @@
-/* Replace "Library" with "Favorites" */
-#library-button > .toolbarbutton-text {
-text-indent: -9999px !important;
-line-height: 1 !important; /* Collapse the original line */
-}
-#library-button>.toolbarbutton-text::After {
-content: "Favorites" !important;
-text-indent: 0 !important;
-display: flex !important;
-background-color: transparent !important;
+/* Rinfox Extras by ImSwordQueen ********************************************************/
+/* Github: https://github.com/florinsdistortedvision/rinfox_updated/ ********************/
+/****************************************************************************************/
+
+:root {
+    --rinfox_extra_moremenus: 0; /* use rinfox.extra.moremenus to enable arrow menus to certain non menus icons */
 }
 
+/* RSS Reader (By florinsdistortedvision) */
+
+/* rss icon turning orange when there are badges*/
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP[badge] {
+    list-style-image: url('images/rss.png') !important;
+    filter: grayscale(0%) !important;
+}
+
+/* rss icon is black/white when no badges */
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP {
+    list-style-image: url('images/rss.png') !important;
+    filter: grayscale(100%) !important;
+}
+
+/* Remove Notification Badge */
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP .toolbarbutton-badge {
+   display: none !important;
+}
+}
+
+/* Adds menu arrow to RSS Feed */
+
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP:after
+{
+  display: inline-block !important;
+  content: '\75';
+  color: transparent !important;
+  font-family: 'Marlett' !important;
+  background-image: url('images/chevron.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+	
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP::after
+{
+  display: inline-block !important;
+  content: '\75';
+  color: transparent !important;
+  font-family: 'Marlett' !important;
+  background-image: url('images/chevron.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* Add a proper folder icon (By NWinXP and travis for AeroFox) */
+
+.bookmark-item[container] {
+  list-style-image: none !important;
+}
+
+.bookmark-item[container][open="true"] .toolbarbutton-icon {
+	background-position-y: -16px !important;
+}
+
+.bookmark-item[container] .toolbarbutton-icon {
+	background-image: url('images/folder-item.png') !important;
+	background-position-x: -16px !important;
+}
+
+/* WIP CODE FOR XP FOLDER ICONS (TODO: Figure this out.)
+	@media not (-moz-platform: windows-win7), (-moz-platform: windows-win8) {
+@media (-moz-windows-compositor: 0) {
+ {
+.bookmark-item[container] .toolbarbutton-icon {
+	background-image: url('images/folder-item-xp.png') !important;
+	background-position-x: -16px !important;
+}
+	}
+
+}
+	}
+*/
+
+/* Replace IE7's add favourites with IE8's */
+
+    @supports -moz-bool-pref("rinfox.tweak.ie8") {
+ #bookmarks-menu-button {
+  list-style-image: url('images/add-favorite-ie8.png') !important;
+}
+}
+
+/* Replace "Library" with "Favorites" */ 
+
+#library-button > .toolbarbutton-text {
+  text-indent: -9999px !important;
+  line-height: -1 !important; /* Collapse the original line */
+  }
+  
+#library-button > .toolbarbutton-text::After {
+  content: "Favorites" !important;
+  text-indent: 0 !important;
+    display: flex !important;
+      background-color: transparent !important;
+  }
+
+
+/* Links Text */
+
+    @supports not -moz-bool-pref("rinfox.tweak.ie8") {
+		
+  #PlacesToolbarItems::before {
+	  
+	content: "Links" !important;
+	display: flex !important;
+	align-items: center !important;
+	position: relative !important;
+	margin-right: 3px !important;
+}
+
+	}
+
+/* Adds the menu arrow to items that aren't menus (via: rinfox.extra.moremenus ) */
+
+@supports -moz-bool-pref("rinfox.extra.moremenus") {
+#home-button::after,
+#print-button::after
+{
+  display: inline-block !important;
+  content: '\75';
+  color: transparent !important;
+  font-family: 'Marlett' !important;
+  background-image: url('images/chevron.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+	
+#home-button::after,
+#print-button::after
+{
+  display: inline-block !important;
+  content: '\75';
+  color: transparent !important;
+  font-family: 'Marlett' !important;
+  background-image: url('images/chevron.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+	}
