@@ -3,8 +3,6 @@
 /****************************************************************************************/
 
 
-/* EXTRAS ISN'T CURRENTLY TRANSLATED TO SPANISH PROPERLY. */
-
 :root {
     --rinfox_extra_moremenus: 0; /* use rinfox.extra.moremenus to enable arrow menus to certain non menus icons */
 }
@@ -113,7 +111,7 @@
 		
   #PlacesToolbarItems::before {
 	  
-	content: "Links" !important;
+	content: "Vínculos" !important;
 	display: flex !important;
 	align-items: center !important;
 	position: relative !important;
