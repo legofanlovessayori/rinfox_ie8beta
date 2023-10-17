@@ -289,3 +289,7 @@
 .tabbrowser-tab:not([selected="true"]) .tab-close-button {
   visibility: collapse !important;
 }
+
+.tabbrowser-tab:only-of-type {
+    max-width: 300px !important; /* Close value, compare screenshots and use the actual correct one, if this is already correct then :OOO */
+}
