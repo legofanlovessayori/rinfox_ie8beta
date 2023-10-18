@@ -49,6 +49,9 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 > browser.tabs.secondaryTextUnsupportedLocales
 >> add your locale such as: en
 
+> rinfox.extra.moremenus
+>> create as BOOLEAN, then set value as: true
+
 
 ###### Thanks to a new update, now you can choose between Translations. Pick whichever you like and make sure to start copying only the folders as instructed below.
 4. Go to the installation folder of Firefox (usually inside C:\Program Files\Mozilla Firefox) and copy the **contents** of ffroot folder from rinfox folder inside it, and replace when prompted the files.
@@ -60,7 +63,8 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 ![](ie7%20layout.png)
    * Note that menu bar is hidden, and that you need to uncheck Hide downloads.
 10. To have the Quick Tabs, [you may simply install TipTab from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/). Simply pin it to toolbar and add it in place.
-11. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
+11. To have the Quick Tabs, [you may simply install Feedbro from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/). Simply pin it to toolbar and add it in place.
+12. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
   * https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox
 
 ## Switching between Internet Explorer 7 and Internet Explorer 8 mode
@@ -128,9 +132,10 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * Rinfox is made by [travis](https://github.com/travy-patty) which also made [Windows eXPerience](https://experience.noncities.com/).
 * About dialog fixes, inPrivate svg and addition to toolbar by [angelbruni](https://github.com/brunobits).
 * Accurate single tab size addition & removal of X button for one tab by RandomFIFA64#7391
-* IE8 Bookmarks fix by [ImSwordQueen](https://github.com/ImSwordQueen)
+* IE8 Bookmarks fix and most extras by [ImSwordQueen](https://github.com/ImSwordQueen)
 * omni.ja tweaks by me.
 * [Tip Tab by William Wong](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/)
+* [Feedbro by Nodetics](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/)
 * Mozilla for Firefox.
 * Microsoft for IE7 icons.
 
