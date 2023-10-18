@@ -149,3 +149,19 @@
 }
 
 	}
+	
+/* fix for ie8 quicktabs/tiptab having the ie7gradient */
+#TabsToolbar #tiptab_william_wong-BAP {
+  list-style-image: url('images/all-tabs-preview.png') !important;
+  background-image: none !important;
+}
+
+#TabsToolbar #tiptab_william_wong-BAP[rinfox-tweak-ie8="true"] {
+  background-image: none !important;
+}
+
+#TabsToolbar #tiptab_william_wong-BAP:hover {
+  background-image: linear-gradient(to bottom, #EDF3FC 0%, #C6DDF7 25%, #99C6EE 25%, #B0D3F0 75%, #D9E9F9 100%) !important;
+}
+
+
