@@ -165,4 +165,24 @@
   background-image: linear-gradient(to bottom, #EDF3FC 0%, #C6DDF7 25%, #99C6EE 25%, #B0D3F0 75%, #D9E9F9 100%) !important;
 }
 
+/* Adding IE's purple chevron (yes it actually purple) instead of firefox one */
+
+/* Hiding the default image */
+#PlacesChevron, #nav-bar-overflow-button {
+   list-style-image: none !important;
+}
+
+/* Adding new one and position it */
+#PlacesChevron::before, #nav-bar-overflow-button::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("images/purplechevron.png");
+  background-size: 10x 10px; /* Set the image size to match the image dimensions */
+  background-repeat: no-repeat;
+  background-position: 8px top; /* Adjust the position as needed */
+  margin-right: -8px;
+}
+
 
