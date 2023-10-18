@@ -2,7 +2,6 @@
 /* Github: https://github.com/florinsdistortedvision/rinfox_updated/ ********************/
 /****************************************************************************************/
 
-
 :root {
     --rinfox_extra_moremenus: 0; /* use rinfox.extra.moremenus to enable arrow menus to certain non menus icons */
 }
@@ -35,7 +34,7 @@
   content: '\75';
   color: transparent !important;
   font-family: 'Marlett' !important;
-  background-image: url('images/chevron.png') !important;
+  background-image: url('images/chevron-vista.png') !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   transform: translateX(-1px) !important;
@@ -51,6 +50,7 @@
   background-repeat: no-repeat !important;
   background-position: center center !important;
   transform: translateX(-1px) !important;
+  margin-left: 5px;
 }
 
 /* Add a proper folder icon (By NWinXP and travis for AeroFox) */
@@ -98,7 +98,7 @@
   }
   
 #library-button > .toolbarbutton-text::After {
-  content: "Favoritos" !important;
+  content: "Favorites" !important;
   text-indent: 0 !important;
     display: flex !important;
       background-color: transparent !important;
@@ -111,7 +111,7 @@
 		
   #PlacesToolbarItems::before {
 	  
-	content: "Vínculos" !important;
+	content: "Links" !important;
 	display: flex !important;
 	align-items: center !important;
 	position: relative !important;
@@ -130,10 +130,11 @@
   content: '\75';
   color: transparent !important;
   font-family: 'Marlett' !important;
-  background-image: url('images/chevron.png') !important;
+  background-image: url('images/chevron-vista.png') !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   transform: translateX(-1px) !important;
+  margin-left: 5px;
 }
 	
 #home-button::after,
@@ -150,7 +151,7 @@
 }
 
 	}
-	
+
 /* fix for ie8 quicktabs/tiptab having the ie7gradient */
 #TabsToolbar #tiptab_william_wong-BAP {
   list-style-image: url('images/all-tabs-preview.png') !important;
@@ -164,6 +165,7 @@
 #TabsToolbar #tiptab_william_wong-BAP:hover {
   background-image: linear-gradient(to bottom, #EDF3FC 0%, #C6DDF7 25%, #99C6EE 25%, #B0D3F0 75%, #D9E9F9 100%) !important;
 }
+
 
 /* Adding IE's purple chevron (yes it actually purple) instead of firefox one */
 
@@ -185,4 +187,25 @@
   margin-right: -8px;
 }
 
+/* Added of bit of padding to make it more even for rss, email and home buttpm */
+#home-button
+{
+  position: relative;
+  right: -1px;
+}
 
+#email-link-button
+{
+  position: relative;
+  right: 2px;
+}
+
+#_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-BAP {
+  position: relative;
+  left: 2px;
+}
+
+#print-button {
+  position: relative;
+  left: 2px;
+}
