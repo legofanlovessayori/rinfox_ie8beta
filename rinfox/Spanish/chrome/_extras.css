@@ -111,7 +111,7 @@
 		
   #PlacesToolbarItems::before {
 	  
-	content: "Links" !important;
+	content: "Vínculos" !important;
 	display: flex !important;
 	align-items: center !important;
 	position: relative !important;
