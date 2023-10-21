@@ -98,7 +98,7 @@
   }
   
 #library-button > .toolbarbutton-text::After {
-  content: "Favorites" !important;
+  content: "Favoritos" !important;
   text-indent: 0 !important;
     display: flex !important;
       background-color: transparent !important;
