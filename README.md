@@ -63,8 +63,9 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 ![](ie7%20layout.png)
    * Note that menu bar is hidden, and that you need to uncheck Hide downloads.
 10. To have the Quick Tabs, [you may simply install TipTab from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/). Simply pin it to toolbar and add it in place.
-11. To have the Quick Tabs, [you may simply install Feedbro from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/). Simply pin it to toolbar and add it in place.
-12. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
+11. To have the RSS Feeds, [you may simply install Feedbro from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/). Simply pin it to toolbar and add it in place.
+12. To have the IE8's Add To Bookmarks, [you may simply install Add to Favorites Bar from Firefox Extensions store](https://addons.mozilla.org/en-US/firefox/addon/add-to-favorites-bar/). Simply pin it to toolbar and add it to Bookmarks panel (where your bookmarks are) **only in IE8 mode**.
+13. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
   * https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox
 
 ## Switching between Internet Explorer 7 and Internet Explorer 8 mode
@@ -78,7 +79,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 3. Restart Firefox. Now you should see that the layout has been switched, albeit it looks not right. To fix it right click on the tabs toolbar and press "Customize Toolbar".
 4. Inside Customize toolbar, add back the Bookmarks tab and change the layout like so:
 ![](ie8layout.png)
-* Note that you add Library, Bookmarks **AND a seperator** (in Configuration Toolbar: the one in the middle - straight vertical line) after it. Don't worry it's not like in the picture, it will auto-adjust itself.
+* Note that you add Library, IE8's Add to Favorites Bar extension (see above) **AND a seperator** (in Configuration Toolbar: the one in the middle - straight vertical line) after it. Don't worry it's not like in the picture, it will auto-adjust itself.
 5. Hit Done. If layout looks weird (icons look too big), a restart of your PC is needed. When back from the restart, it should be auto-fixed.
 
 ## Extras
@@ -136,6 +137,7 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 * omni.ja tweaks by me.
 * [Tip Tab by William Wong](https://addons.mozilla.org/en-US/firefox/addon/tip-tab/)
 * [Feedbro by Nodetics](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/)
+* [Add To Favorites Bar by me/florin](https://addons.mozilla.org/en-US/firefox/addon/add-to-favorites-bar/)
 * Mozilla for Firefox.
 * Microsoft for IE7 icons.
 
