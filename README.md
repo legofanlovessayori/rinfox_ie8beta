@@ -68,6 +68,14 @@ Rinfox is a Mozilla Firefox 115ESR theme that mimicks the look and feel of Inter
 13. Now its a good idea to disable updates to Firefox. While updating ESR **should** not break things, it will always break omni.ja tweaks (homepage, inprivate page and new page) as well as icons (Firefox icon) will be reverted, if that isnt a big deal for you, simply skip this step. If you want to disable them, you can do so by following the following guide:
   * https://www.askvg.com/tip-disable-automatic-updates-in-mozilla-firefox/#how_to_disable_automatic_updates_in_mozilla_firefox
 
+## Skinning TipTab to look like IE's Quick Tabs
+
+1. Make sure you have installed TipTab from the Firefox Extensions store (see above).
+2. Open TipTab by clicking on it.
+3. Inside TipTab's page in the top right, you should see the hamburger menu (☰ icon) > Options. Inside General tab simply uncheck/disable Open Tip Tab in New Window. Close Options page, going back to the TipTab homepage.
+4. Inside the extension take note of the URL, it should be like this: moz-extension://0da9fe6f-2311-4d70-961b-5f3630959b6c/tiptab.html **(0da9fe6f-2311-4d70-961b-5f3630959b6c will change on your end)**. Go to your chrome folder where you pasted rinfox's chrome, then inside it open **usercontent.css** in Notepad or whatever you want. Simply replace the URL noted in @-moz-document url-prefix(moz-extension://0da9fe6f-2311-4d70-961b-5f3630959b6c/tiptab.html). Simply copy paste the full URL into the brackets () of the url-prefix portion.
+5. Save the file. Close and reopen Firefox. TipTab should now be skinned.
+
 ## Switching between Internet Explorer 7 and Internet Explorer 8 mode
 
 1. By switching modes, changes such as About Firefox box, and layout change will happen.
