@@ -213,27 +213,34 @@
 
 @supports not (-moz-bool-pref("rinfox.tweak.ie8")) {
   #PersonalToolbar {
-    height: 20px !important; 
+    height: 22px !important; 
   }
 
   #PersonalToolbar {
     height: 24px;
   }
 
+
   #PersonalToolbar .toolbarbutton-icon {
     margin-top: -5px;
   }
 
   #PersonalToolbar .toolbarbutton-icon:not([width="16"]):not([height="16"]) {
-    width: 13px !important;
-    height: 13px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+  
+  #PersonalToolbar .bookmark-item[container] .toolbarbutton-icon {
+    background-image: url('images/bookfolder.png') !important;
+    background-size: 16px 16px !important;
+    background-position-x: -16px !important;
+
   }
 
   #PlacesToolbar .toolbarbutton-text {
     margin-top: -6px !important;
   } 
 }
-
 
 /* Stop Menu Bar poping up when it's disabled */
 #toolbar-menubar[autohide="true"] {
