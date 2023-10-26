@@ -1,29 +1,26 @@
 // Rinfox Status Bar by florin
 
 window.addEventListener("load", function() {
-  const statusBar = document.createElement('div');
+  var statusBar = document.getElementById('addonbar');
   statusBar.id = 'status-bar';
 
-  const newElementDiv = document.createElement('div');
-  const newElementButton = document.createElement('toolbarbutton');
+  const newElementDiv = document.createXULElement('div');
+  const newElementButton = document.createXULElement('customtoolbarbutton');
 
   newElementDiv.classList.add('internet-options');
-  newElementDiv.title = "Double-click to see page security settings";
+  newElementDiv.setAttribute('tooltiptext', 'Double-click to see page security settings');
   newElementButton.classList.add('zoom-button');
-  newElementButton.title = "Change zoom level";
+  newElementButton.setAttribute('tooltiptext', 'Change zoom level');
 
-// Make Internet Options open Page Info
   newElementDiv.addEventListener('dblclick', function() {
-  BrowserPageInfo();
-});
+    BrowserPageInfo();
+  });
 
- 
-  const securityButton = document.createElement('toolbarbutton');
+  const securityButton = document.createXULElement('customtoolbarbutton');
   securityButton.classList.add('security-button');
-  securityButton.title = "InPrivate Filtering";
-  securityButton.style.filter = 'saturate(0)'; // Security is B/W initially
+  securityButton.setAttribute('tooltiptext', 'InPrivate Filtering');
+  securityButton.style.filter = 'saturate(0)';
 
-  // When clicked it turns back into color and back to B/W when clicked again
   securityButton.addEventListener('click', function() {
     if (securityButton.style.filter === 'none') {
       securityButton.style.filter = 'saturate(0)';
@@ -32,12 +29,11 @@ window.addEventListener("load", function() {
     }
   });
 
-  const securitySeparator = document.createElement('div');
+  const securitySeparator = document.createXULElement('div');
   securitySeparator.classList.add('security-separator');
 
   let currentZoomLevel = 100;
 
-  // Zoom-in function for zoom-button
   function updateButtonText() {
     newElementButton.textContent = `${currentZoomLevel}%`;
   }
@@ -65,22 +61,21 @@ window.addEventListener("load", function() {
   statusBar.appendChild(securitySeparator);
   statusBar.appendChild(newElementButton);
 
-  const cornerIcon = document.createElement('div');
+  const cornerIcon = document.createXULElement('div');
   cornerIcon.classList.add('corner-icon');
   statusBar.insertBefore(cornerIcon, newElementButton.nextSibling);
 
   for (let i = 0; i < 7; i++) {
-    const separators = document.createElement('div');
+    const separators = document.createXULElement('div');
     separators.classList.add(`separator-${i + 1}`);
     statusBar.insertBefore(separators, newElementDiv);
   }
 
-  const doneText = document.createElement('div');
+  const doneText = document.createXULElement('div');
   doneText.classList.add('doneText');
   doneText.textContent = 'Done';
-  statusBar.appendChild(doneText);
 
-  document.body.appendChild(statusBar);
+  statusBar.appendChild(doneText);
 
   // Add Done after all Status Panels have shown when loading the page
   function updateDoneTextVisibility() {
@@ -89,7 +84,7 @@ window.addEventListener("load", function() {
     if (statusPanel && statusPanel.hasAttribute('inactive')) {
       doneText.style.display = 'block';
     } else {
-      doneText.style.display = 'none'; 
+      doneText.style.display = 'none';
     }
   }
 
@@ -97,5 +92,6 @@ window.addEventListener("load", function() {
 
   // Event listener for changes in the statuspanel elements
   document.body.addEventListener('DOMSubtreeModified', updateDoneTextVisibility);
-  
+
+
 });

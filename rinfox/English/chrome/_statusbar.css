@@ -1,5 +1,24 @@
 /* Rinfox StatusBar Styling by florin */
-/* elements.uc.js needs to be in JS folder */
+/* statusbar.uc.js and statusbarbones.uc.js needs to be in JS folder */
+
+
+@supports (-moz-bool-pref("rinfox.statusbar.disabled")) {
+	#status-bar,
+	.internet-options,
+	.zoom-button,
+	.corner-icon,
+	.separator-2,
+	.separator-3,
+	.separator-4,
+	.separator-5,
+	.separator-6,
+	.separator-7,
+	.doneText,
+	.security-button,
+	.security-separator {
+		display: none !important;
+	}
+}
 
 #status-bar {
 	border-top: 1px solid #9f9e9f !important;
@@ -57,7 +76,7 @@
   transform: translateY(-22px) translateX(-1px);
   padding-left: 15px !important;
   position: relative;
-  top: 2px;
+  top: 20px;
 }
 
 .zoom-button {  
@@ -153,7 +172,7 @@
   transform: translateY(-22px) translateX(-1px);
   padding-left: 4px !important;
   position: relative;
-  top: 2px;
+  top: 20px;
 }
 
 .security-separator {
@@ -173,3 +192,17 @@
 }
 
 }
+
+customtoolbarbutton {
+  appearance: auto;
+  -moz-default-appearance: toolbarbutton;
+  margin: 0;
+  padding: 3px;
+}
+
+
+customtoolbarbutton:-moz-focusring {
+  outline: var(--default-focusring);
+  outline-offset: calc(-1 * var(--default-focusring-width) - 1px);
+}
+
