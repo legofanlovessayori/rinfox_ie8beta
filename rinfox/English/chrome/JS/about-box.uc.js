@@ -44,7 +44,7 @@ let aboutboxinfostregnth;
 let aboutboxinfoid;
 let aboutboxinfoupdate;
 if (isIE8Enabled) {
-	aboutboxinfoversion = "Version: 8.0.6001.18702";
+	aboutboxinfoversion = "Version: 8.0.7000.0";
 	aboutboxinfostregnth = "Cipher Strength: 256-bit";
 	aboutboxinfoid = "Product ID: 01404-014-0000025-714000";
 	aboutboxinfoupdate = "Update Versions: 0";
@@ -86,7 +86,7 @@ const windowsflagattributes = {
 const copyrightlink = document.createElement("a");
 let copyrightLinkText;
 if (isIE8Enabled) {
-	copyrightLinkText = "©2009 Microsoft Corporation";
+	copyrightLinkText = "©2008 Microsoft Corporation";
 } else {
 	copyrightLinkText = "©2006 Microsoft Corporation";
 }
