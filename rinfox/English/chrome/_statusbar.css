@@ -3,7 +3,7 @@
 
 
 @supports (-moz-bool-pref("rinfox.statusbar.disabled")) {
-	#status-bar,
+	#addonbar,
 	.internet-options,
 	.zoom-button,
 	.corner-icon,
@@ -20,7 +20,21 @@
 	}
 }
 
-#status-bar {
+#main-window[customizing] #addonbar {
+			outline: 1px dashed !important;
+			outline-offset: -2px !important;
+		  }
+
+
+#main-window[customizing] #addonbar::before {
+			content: "When in Customizing Mode, drag-n-drop your addons to the bar, then restart Internet Explorer for addons to fix their position." !important;
+            position: absolute !important;
+            left: 5px !important;
+            bottom: 5px !important;
+    
+		  }
+
+#addonbar {
 	border-top: 1px solid #9f9e9f !important;
 	background-color: #f1edec !important;
 	-moz-window-dragging: no-drag !important;

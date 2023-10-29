@@ -1,11 +1,8 @@
-// Rinfox Status Bar by florin
-
 window.addEventListener("load", function() {
   var statusBar = document.getElementById('addonbar');
-  statusBar.id = 'status-bar';
 
-  const newElementDiv = document.createXULElement('div');
-  const newElementButton = document.createXULElement('customtoolbarbutton');
+  const newElementDiv = document.createElement('div');
+  const newElementButton = document.createElement('customtoolbarbutton');
 
   newElementDiv.classList.add('internet-options');
   newElementDiv.setAttribute('tooltiptext', 'Double-click to see page security settings');
@@ -16,7 +13,7 @@ window.addEventListener("load", function() {
     BrowserPageInfo();
   });
 
-  const securityButton = document.createXULElement('customtoolbarbutton');
+  const securityButton = document.createElement('customtoolbarbutton');
   securityButton.classList.add('security-button');
   securityButton.setAttribute('tooltiptext', 'InPrivate Filtering');
   securityButton.style.filter = 'saturate(0)';
@@ -29,7 +26,7 @@ window.addEventListener("load", function() {
     }
   });
 
-  const securitySeparator = document.createXULElement('div');
+  const securitySeparator = document.createElement('div');
   securitySeparator.classList.add('security-separator');
 
   let currentZoomLevel = 100;
@@ -61,23 +58,22 @@ window.addEventListener("load", function() {
   statusBar.appendChild(securitySeparator);
   statusBar.appendChild(newElementButton);
 
-  const cornerIcon = document.createXULElement('div');
+  const cornerIcon = document.createElement('div');
   cornerIcon.classList.add('corner-icon');
   statusBar.insertBefore(cornerIcon, newElementButton.nextSibling);
 
   for (let i = 0; i < 7; i++) {
-    const separators = document.createXULElement('div');
+    const separators = document.createElement('div');
     separators.classList.add(`separator-${i + 1}`);
     statusBar.insertBefore(separators, newElementDiv);
   }
 
-  const doneText = document.createXULElement('div');
+  const doneText = document.createElement('div');
   doneText.classList.add('doneText');
   doneText.textContent = 'Done';
 
   statusBar.appendChild(doneText);
 
-  // Add Done after all Status Panels have shown when loading the page
   function updateDoneTextVisibility() {
     const statusPanel = document.querySelector('#statuspanel[type="defaultStatus"][previoustype="status"]');
 
@@ -90,8 +86,35 @@ window.addEventListener("load", function() {
 
   updateDoneTextVisibility();
 
-  // Event listener for changes in the statuspanel elements
   document.body.addEventListener('DOMSubtreeModified', updateDoneTextVisibility);
+ 
+  var addonElements = Array.from(document.querySelectorAll('[id*="BAP"]')); // Find elements with IDs containing "BAP"
+  
+  addonElements.forEach(function(addonElement) {
+    if (addonElement.parentElement === statusBar) {
+      // Check if the element's extension ID is pinned to the addon bar
+      var extensionID = addonElement.id.replace(/-[^-]*$/, ''); 
+      if (isExtensionPinned(extensionID)) {
+        statusBar.insertBefore(addonElement, newElementDiv);
+      }
+    }
+  });
+  
+  function isExtensionPinned(extensionID) {
+  var { AddonManager } = Components.utils.import("resource://gre/modules/AddonManager.jsm", {});
 
+  return new Promise((resolve) => {
+    AddonManager.getAllAddons(addons => {
+      for (let addon of addons) {
+        if (addon.id === extensionID && addon.userDisabled === false) {
+          resolve(true);
+          return;
+        }
+      }
+      resolve(false);
+    });
+  });
+}
 
 });
+
